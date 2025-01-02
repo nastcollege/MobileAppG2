@@ -29,8 +29,9 @@ public class LoginActivity extends Activity {
             public void onClick(View view) {
                 //event handling code goes here
                 if(etUsername.getText().toString().equals("NAST") && etPassword.getText().toString().equals("BE7th")){
-
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    //intent to pass data from one activity to another activity
+                    intent.putExtra("user", etUsername.getText().toString());
                     startActivity(intent);
                     finish();
                 }else{

@@ -32,4 +32,10 @@
         android:layout_height="55dp"
         android:text="Login" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/login_signup"
+        android:id="@+id/btnSignup"/>
+
 </LinearLayout>
